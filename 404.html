@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Page Not Found
+</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--bg-main:#15110f;
+--bg-alt:#231914;
+
+--gold:#e8b66a;
+--fire:#ff9c3d;
+
+--text:#f4efe8;
+--text-soft:#d2c7bb;
+
+}
+
+body{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:40px;
+
+font-family:Georgia,serif;
+
+text-align:center;
+
+background:
+linear-gradient(
+180deg,
+var(--bg-main),
+var(--bg-alt)
+);
+
+overflow:hidden;
+
+color:var(--text);
+}
+
+.error-box{
+
+max-width:850px;
+
+position:relative;
+
+z-index:2;
+}
+
+.glow{
+
+position:absolute;
+
+width:600px;
+
+height:600px;
+
+background:
+
+radial-gradient(
+circle,
+rgba(255,156,61,.12),
+transparent 70%
+);
+
+top:50%;
+
+left:50%;
+
+transform:
+translate(-50%,-50%);
+}
+
+.error-code{
+
+font-size:
+clamp(
+5rem,
+15vw,
+10rem
+);
+
+font-weight:bold;
+
+color:var(--gold);
+
+text-shadow:
+0 0 30px
+rgba(232,182,106,.25);
+
+margin-bottom:20px;
+}
+
+.error-title{
+
+font-size:
+clamp(
+2rem,
+5vw,
+3rem
+);
+
+margin-bottom:30px;
+
+color:var(--fire);
+}
+
+.error-text{
+
+font-size:1.1rem;
+
+line-height:2;
+
+max-width:700px;
+
+margin:
+0 auto
+45px;
+
+color:
+var(--text-soft);
+}
+
+.error-links{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+}
+
+.error-links a{
+
+padding:
+15px 30px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+color:var(--text);
+
+background:
+rgba(232,182,106,.08);
+
+border:
+1px solid
+rgba(232,182,106,.15);
+
+transition:.35s;
+}
+
+.error-links a:hover{
+
+transform:
+translateY(-5px);
+
+background:
+rgba(255,156,61,.15);
+}
+
+@media(max-width:768px){
+
+.error-links{
+
+flex-direction:column;
+
+align-items:center;
+}
+
+.error-links a{
+
+width:100%;
+max-width:250px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="glow"></div>
+
+<div class="error-box">
+
+<div class="error-code">
+
+404
+
+</div>
+
+<h1 class="error-title">
+
+Looks Like This Page Wandered Off
+
+</h1>
+
+<p class="error-text">
+
+A missing page does not mean the journey ended. Return home, continue reading, and keep moving toward grace, hope, and revival.
+
+</p>
+
+<div class="error-links">
+
+<a href="index.html">
+
+Home
+
+</a>
+
+<a href="contents.html">
+
+Contents
+
+</a>
+
+<a href="chapter1.html">
+
+Begin Reading
+
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
