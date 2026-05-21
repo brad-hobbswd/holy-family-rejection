@@ -106,17 +106,18 @@ color:var(--fire);
 }
 
 
-/* top banner */
+
+/* banner */
 
 .book-banner{
 
 width:100%;
 
-overflow:hidden;
-
 position:relative;
 
-background:#000;
+background:#0f0b09;
+
+overflow:hidden;
 
 margin-bottom:80px;
 
@@ -124,44 +125,48 @@ box-shadow:
 0 20px 60px rgba(0,0,0,.45);
 }
 
+
 .book-banner img{
 
 display:block;
 
 width:100%;
 
-height:clamp(
-420px,
-85vh,
-900px
-);
+height:auto;
 
-object-fit:cover;
+max-width:100%;
+
+object-fit:contain;
 
 object-position:center;
+
+margin:auto;
 }
+
 
 .banner-overlay{
 
 position:absolute;
 
-bottom:0;
-
 left:0;
 
 right:0;
 
+bottom:0;
+
 padding:
-clamp(35px,6vw,90px)
+clamp(20px,4vw,60px)
 8%
-60px;
+clamp(20px,4vw,45px);
 
 background:
+
 linear-gradient(
-transparent,
-rgba(0,0,0,.85)
+transparent 20%,
+rgba(0,0,0,.88)
 );
 }
+
 
 .banner-badge{
 
@@ -191,10 +196,12 @@ letter-spacing:2px;
 text-transform:uppercase;
 }
 
+
 .banner-text{
 
 max-width:650px;
 }
+
 
 .banner-text p{
 
@@ -211,6 +218,7 @@ margin-bottom:35px;
 
 color:#f4efe8;
 }
+
 
 .begin-btn{
 
@@ -242,6 +250,7 @@ transition:.35s;
 transform:
 translateY(-5px);
 }
+
 
 
 /* intro */
@@ -284,7 +293,18 @@ var(--text-soft);
 }
 
 
+
 /* responsive */
+
+@media(max-width:992px){
+
+.book-banner{
+
+margin-bottom:65px;
+}
+
+}
+
 
 @media(max-width:768px){
 
@@ -302,9 +322,15 @@ flex-wrap:wrap;
 justify-content:center;
 }
 
-.book-banner img{
+.banner-overlay{
 
-height:60vh;
+padding:
+25px 6%;
+}
+
+.banner-text{
+
+max-width:100%;
 }
 
 }
@@ -312,20 +338,16 @@ height:60vh;
 
 @media(max-width:480px){
 
-.book-banner img{
+.banner-badge{
 
-height:430px;
-}
-
-.banner-overlay{
-
-padding:
-30px 7%;
+font-size:.7rem;
 }
 
 .begin-btn{
 
 display:block;
+
+width:100%;
 
 text-align:center;
 }
@@ -333,6 +355,7 @@ text-align:center;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -382,7 +405,7 @@ About
 
 <img
 src="0EB7BA12-5534-46D0-9EED-B926C2686BDF.png"
-alt="The Rise of a Holy Family banner">
+alt="The Rise of a Holy Family Banner">
 
 
 <div class="banner-overlay">
@@ -427,7 +450,7 @@ A Revival Born From Rejection
 
 <p>
 
-Families carry stories. Some stories contain joy while others carry wounds, rejection, fear, and words spoken by others that linger long after moments pass. Through grace, belonging, holiness, and hope, a different story can rise. Revival often begins in places many overlook and among people many underestimate.
+Families carry stories. Some stories contain joy while others carry wounds, rejection, fear, and painful words that linger long after seasons change. Through grace, belonging, holiness, and hope, a different story can rise. Revival often begins in places many overlook and among people many underestimate.
 
 </p>
 
@@ -452,7 +475,6 @@ document.getElementById(
 });
 
 </script>
-
 
 </body>
 </html>
