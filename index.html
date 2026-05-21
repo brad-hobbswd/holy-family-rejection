@@ -1,131 +1,458 @@
-<section class="contents-hero">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 
-<div class="hero-inner">
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<span class="contents-tag">
+<title>
+The Rise of a Holy Family | Bradley Hobbs
+</title>
 
-Book Navigation
+<style>
 
-</span>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-<h1>
+:root{
 
-Table of Contents
+--bg-main:#15110f;
+--bg-alt:#231914;
 
-</h1>
+--gold:#e8b66a;
+--fire:#ff9c3d;
+
+--text:#f4efe8;
+--text-soft:#d2c7bb;
+
+}
+
+body{
+
+font-family:Arial,sans-serif;
+
+background:
+linear-gradient(
+180deg,
+var(--bg-main),
+var(--bg-alt)
+);
+
+color:var(--text);
+
+overflow-x:hidden;
+}
+
+
+/* navigation */
+
+nav{
+
+padding:22px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+background:
+rgba(0,0,0,.45);
+
+backdrop-filter:blur(12px);
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+}
+
+.logo{
+
+font-size:1.2rem;
+
+font-weight:bold;
+
+color:var(--gold);
+}
+
+nav ul{
+
+display:flex;
+
+list-style:none;
+
+gap:25px;
+}
+
+nav a{
+
+text-decoration:none;
+
+color:var(--text);
+
+transition:.3s;
+}
+
+nav a:hover{
+
+color:var(--fire);
+}
+
+
+/* top banner */
+
+.book-banner{
+
+width:100%;
+
+overflow:hidden;
+
+position:relative;
+
+background:#000;
+
+margin-bottom:80px;
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.45);
+}
+
+.book-banner img{
+
+display:block;
+
+width:100%;
+
+height:clamp(
+420px,
+85vh,
+900px
+);
+
+object-fit:cover;
+
+object-position:center;
+}
+
+.banner-overlay{
+
+position:absolute;
+
+bottom:0;
+
+left:0;
+
+right:0;
+
+padding:
+clamp(35px,6vw,90px)
+8%
+60px;
+
+background:
+linear-gradient(
+transparent,
+rgba(0,0,0,.85)
+);
+}
+
+.banner-badge{
+
+display:inline-block;
+
+padding:
+10px 24px;
+
+margin-bottom:25px;
+
+border-radius:50px;
+
+background:
+rgba(232,182,106,.12);
+
+border:
+1px solid
+rgba(232,182,106,.35);
+
+color:
+var(--gold);
+
+font-size:.8rem;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+}
+
+.banner-text{
+
+max-width:650px;
+}
+
+.banner-text p{
+
+line-height:2;
+
+font-size:
+clamp(
+1rem,
+2vw,
+1.3rem
+);
+
+margin-bottom:35px;
+
+color:#f4efe8;
+}
+
+.begin-btn{
+
+display:inline-block;
+
+padding:
+16px 34px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+color:#1a1410;
+
+background:
+linear-gradient(
+90deg,
+var(--gold),
+var(--fire)
+);
+
+transition:.35s;
+}
+
+.begin-btn:hover{
+
+transform:
+translateY(-5px);
+}
+
+
+/* intro */
+
+.intro{
+
+padding:
+0 8%
+90px;
+
+max-width:1000px;
+
+margin:auto;
+
+text-align:center;
+}
+
+.intro h2{
+
+font-size:
+clamp(
+2rem,
+5vw,
+3rem
+);
+
+color:var(--gold);
+
+margin-bottom:30px;
+}
+
+.intro p{
+
+line-height:2;
+
+font-size:1.1rem;
+
+color:
+var(--text-soft);
+}
+
+
+/* responsive */
+
+@media(max-width:768px){
+
+nav{
+
+flex-direction:column;
+
+gap:15px;
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+}
+
+.book-banner img{
+
+height:60vh;
+}
+
+}
+
+
+@media(max-width:480px){
+
+.book-banner img{
+
+height:430px;
+}
+
+.banner-overlay{
+
+padding:
+30px 7%;
+}
+
+.begin-btn{
+
+display:block;
+
+text-align:center;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<nav>
+
+<div class="logo">
+
+Bradley Hobbs
+
+</div>
+
+<ul>
+
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="contents.html">
+Contents
+</a>
+</li>
+
+<li>
+<a href="chapter1.html">
+Begin Reading
+</a>
+</li>
+
+<li>
+<a href="about.html">
+About
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+
+
+<section class="book-banner">
+
+<img
+src="0EB7BA12-5534-46D0-9EED-B926C2686BDF.png"
+alt="The Rise of a Holy Family banner">
+
+
+<div class="banner-overlay">
+
+<div class="banner-badge">
+
+New Release
+
+</div>
+
+<div class="banner-text">
 
 <p>
 
-A journey through rejection, grace, holy families, belonging, and revival born in unexpected places.
+A powerful story of grace, healing, holy families, and revival rising from places once marked by rejection.
 
 </p>
+
+<a
+href="contents.html"
+class="begin-btn">
+
+Begin Reading
+
+</a>
+
+</div>
 
 </div>
 
 </section>
 
 
-<section class="contents-container">
 
-<a href="chapter1.html" class="chapter-card">
-
-<span>
-Chapter 1
-</span>
+<section class="intro">
 
 <h2>
-The Verdict That Was Wrong
+
+A Revival Born From Rejection
+
 </h2>
 
 <p>
-False labels and painful words often linger. Grace begins by overturning verdicts that never came from the heart of God.
+
+Families carry stories. Some stories contain joy while others carry wounds, rejection, fear, and words spoken by others that linger long after moments pass. Through grace, belonging, holiness, and hope, a different story can rise. Revival often begins in places many overlook and among people many underestimate.
+
 </p>
-
-</a>
-
-
-<a href="chapter2.html" class="chapter-card">
-
-<span>
-Chapter 2
-</span>
-
-<h2>
-When Grace Chooses the Overlooked
-</h2>
-
-<p>
-Throughout Scripture, overlooked people become living reminders that grace often begins where others stop looking.
-</p>
-
-</a>
-
-
-<a href="chapter3.html" class="chapter-card">
-
-<span>
-Chapter 3
-</span>
-
-<h2>
-Building a Family That Defies Fear
-</h2>
-
-<p>
-Belonging, truth, prayer, hospitality, and resilience become foundations for homes strengthened by love.
-</p>
-
-</a>
-
-
-<a href="chapter4.html" class="chapter-card">
-
-<span>
-Chapter 4
-</span>
-
-<h2>
-A Revival Others Could Not Imagine
-</h2>
-
-<p>
-Revival grows through surrender, prayer, faithfulness, and ordinary acts transformed by God.
-</p>
-
-</a>
-
-
-<a href="chapter5.html" class="chapter-card">
-
-<span>
-Chapter 5
-</span>
-
-<h2>
-The Call That Cannot Be Ignored
-</h2>
-
-<p>
-Identity, holiness, courage, and mission come together in a call demanding response.
-</p>
-
-</a>
-
-
-<a href="epilogue.html" class="chapter-card">
-
-<span>
-Epilogue
-</span>
-
-<h2>
-The Quiet Revolution of Grace
-</h2>
-
-<p>
-Grace changes homes, communities, and generations through faithful lives shaped by hope.
-</p>
-
-</a>
 
 </section>
+
+
+
+<div id="footer"></div>
+
+<script>
+
+fetch("footer.html")
+
+.then(response=>response.text())
+
+.then(data=>{
+
+document.getElementById(
+"footer"
+).innerHTML=data;
+
+});
+
+</script>
+
+
+</body>
+</html>
