@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Chapter 1 | The Verdict That Was Wrong
+</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--bg-main:#15110f;
+--bg-alt:#231914;
+
+--gold:#e8b66a;
+--fire:#ff9c3d;
+
+--text:#f4efe8;
+--text-soft:#d2c7bb;
+
+}
+
+body{
+
+font-family:Georgia,serif;
+
+background:
+linear-gradient(
+180deg,
+var(--bg-main),
+var(--bg-alt)
+);
+
+color:var(--text);
+
+line-height:2;
+}
+
+.chapter-hero{
+
+padding:
+100px 8%
+60px;
+
+text-align:center;
+
+border-bottom:
+1px solid
+rgba(232,182,106,.12);
+}
+
+.chapter-label{
+
+display:inline-block;
+
+padding:
+10px 22px;
+
+border-radius:50px;
+
+margin-bottom:25px;
+
+background:
+rgba(232,182,106,.08);
+
+border:
+1px solid
+rgba(232,182,106,.22);
+
+color:var(--gold);
+
+font-size:.8rem;
+
+letter-spacing:2px;
+}
+
+.chapter-hero h1{
+
+font-size:
+clamp(
+2.5rem,
+6vw,
+4rem
+);
+
+margin-bottom:20px;
+
+color:var(--gold);
+}
+
+.chapter-content{
+
+max-width:900px;
+
+margin:auto;
+
+padding:
+70px 8%
+90px;
+
+font-size:1.15rem;
+
+color:var(--text-soft);
+}
+
+.chapter-content p{
+
+margin-bottom:35px;
+}
+
+.chapter-navigation{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+padding-bottom:80px;
+
+flex-wrap:wrap;
+}
+
+.chapter-navigation a{
+
+padding:
+15px 28px;
+
+text-decoration:none;
+
+border-radius:50px;
+
+background:
+rgba(232,182,106,.08);
+
+border:
+1px solid
+rgba(232,182,106,.15);
+
+color:var(--text);
+
+transition:.35s;
+}
+
+.chapter-navigation a:hover{
+
+background:
+rgba(255,156,61,.15);
+}
+
+@media(max-width:768px){
+
+.chapter-content{
+
+font-size:1rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<section class="chapter-hero">
+
+<div class="chapter-label">
+
+Chapter 1
+
+</div>
+
+<h1>
+
+The Verdict That Was Wrong
+
+</h1>
+
+</section>
+
+
+<section class="chapter-content">
+
+<p>
+There are words that echo long after they are spoken. Words that wound, words that define, words that claim authority over destiny. For many, those words sounded like this: You are nothing. You cannot do what others do. You will never make it to Heaven.
+</p>
+
+<p>
+These verdicts were delivered by voices that claimed to speak for God, yet they contradicted the heart of the gospel. They were verdicts rooted in fear, pride, and misunderstanding, not in grace and truth.
+</p>
+
+<p>
+The lie of disqualification is powerful because it masquerades as holiness. It dresses itself in religious language and quotes Scripture selectively. It creates categories of insiders and outsiders.
+</p>
+
+<p>
+The gospel dismantles this lie with relentless clarity. Salvation is received by faith in Jesus Christ. The cross is not exclusion. The cross is mercy.
+</p>
+
+<p>
+Consider Scripture. David was overlooked. Rahab was dismissed. The Samaritan woman carried a painful history. The thief on the cross had nothing except trust.
+</p>
+
+<p>
+The verdict that was wrong said you cannot do what others do. Truth says you can do what God calls you to do.
+</p>
+
+<p>
+The verdict that was wrong said you will never make it to Heaven. Truth says Heaven is the home of the forgiven rather than the fortress of the flawless.
+</p>
+
+<p>
+Lay down the words that wounded you. Hear the truer word spoken by Jesus. You are loved. You are wanted. You are called.
+</p>
+
+</section>
+
+
+<div class="chapter-navigation">
+
+<a href="contents.html">
+
+← Contents
+
+</a>
+
+<a href="chapter2.html">
+
+Chapter 2 →
+
+</a>
+
+</div>
+
+
+<div id="footer"></div>
+
+<script>
+
+fetch("footer.html")
+
+.then(response=>response.text())
+
+.then(data=>{
+
+document.getElementById(
+"footer"
+).innerHTML=data;
+
+});
+
+</script>
+
+</body>
+</html>
