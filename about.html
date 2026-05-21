@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 
 <meta
 name="viewport"
-content="width=device-width, initial-scale=1.0">
+content="width=device-width,initial-scale=1.0">
+
+<meta
+name="description"
+content="About Bradley Hobbs. Faith centered writer, storyteller, and creator exploring healing, restoration, family, revival, and hope through Jesus.">
 
 <title>
+
 About Bradley Hobbs
+
 </title>
 
 <link
-href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Cormorant+Garamond:wght@400;500;600&display=swap"
+href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
 rel="stylesheet">
 
 <style>
@@ -40,6 +47,8 @@ html{
 
 scroll-behavior:smooth;
 
+-webkit-font-smoothing:antialiased;
+
 }
 
 body{
@@ -47,6 +56,9 @@ body{
 font-family:
 "Cormorant Garamond",
 serif;
+
+background-color:
+#15110f;
 
 background:
 linear-gradient(
@@ -74,8 +86,6 @@ padding:
 
 text-align:center;
 
-position:relative;
-
 }
 
 .about-badge{
@@ -85,7 +95,7 @@ display:inline-block;
 padding:
 10px 24px;
 
-border-radius:50px;
+border-radius:999px;
 
 margin-bottom:25px;
 
@@ -98,26 +108,24 @@ rgba(
 );
 
 border:
-1px solid
-rgba(
+1px solid rgba(
 232,
 182,
 106,
 .25
 );
 
-color:
-var(--gold);
+color:var(--gold);
 
 font-size:.8rem;
 
 letter-spacing:2px;
 
-text-transform:uppercase;
-
 font-family:
 "Cinzel",
 serif;
+
+text-transform:uppercase;
 
 }
 
@@ -129,14 +137,14 @@ serif;
 
 font-size:
 clamp(
-2.5rem,
+2.8rem,
 6vw,
-4.5rem
+5rem
 );
 
-margin-bottom:25px;
-
 color:var(--gold);
+
+margin-bottom:25px;
 
 text-shadow:
 0 0 25px rgba(
@@ -154,31 +162,35 @@ max-width:850px;
 
 margin:auto;
 
-line-height:2;
+font-size:1.4rem;
 
-font-size:1.35rem;
+line-height:2;
 
 color:var(--text-soft);
 
 }
 
 
-/* content */
+/* grid */
 
 .author-section{
+
+max-width:1200px;
+
+margin:auto;
 
 padding:
 40px 8%
 100px;
 
-max-width:1100px;
-
-margin:auto;
-
 display:grid;
 
 grid-template-columns:
-1fr 1.3fr;
+minmax(
+280px,
+420px
+)
+1fr;
 
 gap:60px;
 
@@ -188,57 +200,73 @@ align-items:center;
 
 .author-image{
 
-height:500px;
+min-height:500px;
 
-border-radius:30px;
+border-radius:35px;
 
 background:
+
 linear-gradient(
 180deg,
 rgba(
 255,
 156,
 61,
-.18
+.15
 ),
 rgba(
 0,
 0,
 0,
-.25
+.35
 )
 );
 
 border:
-1px solid
-rgba(
+1px solid rgba(
 232,
 182,
 106,
-.15
+.12
 );
 
 display:flex;
 
-justify-content:center;
-
 align-items:center;
 
-font-size:4rem;
-
-color:var(--gold);
+justify-content:center;
 
 box-shadow:
-0 20px 50px rgba(
+0 20px 60px rgba(
 0,
 0,
 0,
 .35
 );
 
+position:relative;
+
+overflow:hidden;
+
+}
+
+.author-image:before{
+
+content:"✝";
+
+font-size:5rem;
+
+color:var(--gold);
+
+opacity:.85;
+
 }
 
 .author-text{
+
+padding:40px;
+
+border-radius:35px;
 
 background:
 rgba(
@@ -248,16 +276,12 @@ rgba(
 .02
 );
 
-padding:35px;
-
-border-radius:30px;
-
 border:
 1px solid rgba(
 232,
 182,
 106,
-.10
+.1
 );
 
 }
@@ -270,7 +294,7 @@ serif;
 
 font-size:2rem;
 
-margin-bottom:25px;
+margin-bottom:30px;
 
 color:var(--gold);
 
@@ -278,11 +302,11 @@ color:var(--gold);
 
 .author-text p{
 
+font-size:1.25rem;
+
 line-height:2;
 
 margin-bottom:25px;
-
-font-size:1.2rem;
 
 color:var(--text-soft);
 
@@ -294,27 +318,9 @@ color:var(--text-soft);
 .author-quote{
 
 padding:
-70px 8%;
+80px 30px;
 
 text-align:center;
-
-border-top:
-1px solid
-rgba(
-232,
-182,
-106,
-.1
-);
-
-border-bottom:
-1px solid
-rgba(
-232,
-182,
-106,
-.1
-);
 
 background:
 rgba(
@@ -322,6 +328,22 @@ rgba(
 255,
 255,
 .02
+);
+
+border-top:
+1px solid rgba(
+232,
+182,
+106,
+.08
+);
+
+border-bottom:
+1px solid rgba(
+232,
+182,
+106,
+.08
 );
 
 }
@@ -332,9 +354,9 @@ max-width:850px;
 
 margin:auto;
 
-font-size:1.7rem;
-
 font-style:italic;
+
+font-size:1.6rem;
 
 line-height:2;
 
@@ -342,10 +364,21 @@ color:var(--gold);
 
 }
 
+#footer{
 
-/* responsive */
+min-height:140px;
 
-@media(max-width:900px){
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:var(--text-soft);
+
+}
+
+@media(max-width:950px){
 
 .author-section{
 
@@ -355,34 +388,37 @@ grid-template-columns:1fr;
 
 .author-image{
 
-height:320px;
+min-height:300px;
 
 }
 
 .about-hero{
 
 padding:
-90px 25px
+90px 30px
 50px;
 
 }
 
 .author-text{
 
-padding:25px;
+padding:30px;
 
 }
 
 }
 
 </style>
+
 </head>
 
 <body>
 
 <section class="about-hero">
 
-<div class="about-badge">
+<div
+class="about-badge"
+aria-label="author badge">
 
 Author
 
@@ -404,9 +440,9 @@ Writer, storyteller, and creator of faith centered works focused on grace, heali
 
 <section class="author-section">
 
-<div class="author-image">
-
-✝
+<div
+class="author-image"
+aria-label="author image area">
 
 </div>
 
@@ -420,13 +456,13 @@ A Heart For Restoration
 
 <p>
 
-Bradley Hobbs writes stories and devotion centered around redemption, healing, identity, and the transforming love of Jesus. Themes of grace, belonging, and spiritual renewal remain woven throughout each work.
+Bradley Hobbs writes stories and devotion centered around redemption, healing, identity, and the transforming love of Jesus.
 
 </p>
 
 <p>
 
-The Rise of a Holy Family explores revival born from rejection and journeys through themes of family restoration, faith, holiness, and hope. Through storytelling and encouragement, readers are invited into places where grace speaks louder than fear.
+The Rise of a Holy Family explores revival born from rejection and journeys through family restoration, faith, holiness, and hope.
 
 </p>
 
@@ -450,60 +486,45 @@ Every page exists with a purpose. Encouragement for wounded hearts. Strength for
 
 </section>
 
-<div id="footer"></div>
+<div id="footer">
+
+Loading...
+
+</div>
 
 <script>
 
 fetch("./footer.html")
 
 .then(
-response=>{
-
-if(!response.ok){
-
-throw new Error(
-"Footer missing"
-);
-
-}
-
-return response.text();
-
-}
+r=>r.text()
 )
 
 .then(
 data=>{
 
-document.getElementById(
+document
+.getElementById(
 "footer"
-).innerHTML=data;
+)
+
+.innerHTML=data;
 
 }
 )
 
-.catch(
-()=>{
+.catch(()=>{
 
-document.getElementById(
+document
+.getElementById(
 "footer"
-).innerHTML=`
+)
 
-<footer style="
-padding:60px;
-text-align:center;
-color:#d2c7bb;
-border-top:1px solid rgba(232,182,106,.1);
-">
+.innerHTML=
 
-Written by Bradley Hobbs
+"<footer style='padding:50px'>Written by Bradley Hobbs</footer>";
 
-</footer>
-
-`;
-
-}
-);
+});
 
 </script>
 
