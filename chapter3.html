@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Chapter 3 | Building a Family That Defies Fear
+</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root{
+
+--bg-main:#15110f;
+--bg-alt:#231914;
+
+--gold:#e8b66a;
+--fire:#ff9c3d;
+
+--text:#f4efe8;
+--text-soft:#d2c7bb;
+
+}
+
+body{
+
+font-family:Georgia,serif;
+
+background:
+linear-gradient(
+180deg,
+var(--bg-main),
+var(--bg-alt)
+);
+
+color:var(--text);
+
+line-height:2;
+}
+
+.chapter-hero{
+
+padding:
+100px 8%
+60px;
+
+text-align:center;
+
+border-bottom:
+1px solid
+rgba(232,182,106,.12);
+}
+
+.chapter-label{
+
+display:inline-block;
+
+padding:
+10px 22px;
+
+border-radius:50px;
+
+margin-bottom:25px;
+
+background:
+rgba(232,182,106,.08);
+
+border:
+1px solid
+rgba(232,182,106,.22);
+
+color:var(--gold);
+
+font-size:.8rem;
+
+letter-spacing:2px;
+}
+
+.chapter-hero h1{
+
+font-size:
+clamp(
+2.2rem,
+6vw,
+4rem
+);
+
+margin-bottom:20px;
+
+color:var(--gold);
+}
+
+.chapter-content{
+
+max-width:900px;
+
+margin:auto;
+
+padding:
+70px 8%
+90px;
+
+font-size:1.15rem;
+
+color:var(--text-soft);
+}
+
+.chapter-content p{
+
+margin-bottom:35px;
+}
+
+.chapter-navigation{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+padding-bottom:80px;
+
+flex-wrap:wrap;
+}
+
+.chapter-navigation a{
+
+padding:
+15px 28px;
+
+text-decoration:none;
+
+border-radius:50px;
+
+background:
+rgba(232,182,106,.08);
+
+border:
+1px solid
+rgba(232,182,106,.15);
+
+color:var(--text);
+
+transition:.35s;
+}
+
+.chapter-navigation a:hover{
+
+background:
+rgba(255,156,61,.15);
+}
+
+@media(max-width:768px){
+
+.chapter-content{
+
+font-size:1rem;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<section class="chapter-hero">
+
+<div class="chapter-label">
+
+Chapter 3
+
+</div>
+
+<h1>
+
+Building a Family That Defies Fear
+
+</h1>
+
+</section>
+
+
+<section class="chapter-content">
+
+<p>
+
+Fear often becomes the hidden architect behind broken stories. Fear builds walls where bridges should exist and whispers that rejection will always win.
+
+</p>
+
+<p>
+
+Many carry painful words spoken over identity and belonging. Those voices attempt to create permanent homes within hearts and families.
+
+</p>
+
+<p>
+
+Grace builds differently. Grace does not build with fear. Grace builds with belonging, truth, mercy, and love.
+
+</p>
+
+<p>
+
+A holy family does not appear by accident. Intentional choices shape homes where grace becomes the atmosphere and love becomes stronger than fear.
+
+</p>
+
+<p>
+
+Belonging becomes the first foundation. Through Jesus, identity rests within adoption rather than human approval.
+
+</p>
+
+<p>
+
+Truth becomes another foundation. Fear thrives through confusion and distortion. Truth speaks clearly and reminds families of promises that cannot fail.
+
+</p>
+
+<p>
+
+Prayer also becomes essential. Prayer transforms homes into places where burdens are shared, hope is strengthened, and trust grows deeper.
+
+</p>
+
+<p>
+
+Hospitality opens doors fear tries to close. Tables become places where healing begins and where strangers discover safety and belonging.
+
+</p>
+
+<p>
+
+Resilience also matters. Difficult seasons still arrive. Storms still come. Families rooted in grace learn perseverance rather than despair.
+
+</p>
+
+<p>
+
+A family shaped by mercy, truth, hospitality, prayer, and resilience becomes evidence that love speaks louder than fear.
+
+</p>
+
+</section>
+
+
+<div class="chapter-navigation">
+
+<a href="chapter2.html">
+
+← Chapter 2
+
+</a>
+
+<a href="chapter4.html">
+
+Chapter 4 →
+
+</a>
+
+</div>
+
+
+<div id="footer"></div>
+
+<script>
+
+fetch("footer.html")
+
+.then(response=>response.text())
+
+.then(data=>{
+
+document.getElementById(
+"footer"
+).innerHTML=data;
+
+});
+
+</script>
+
+</body>
+
+</html>
