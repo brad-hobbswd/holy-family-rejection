@@ -11,6 +11,10 @@ content="width=device-width, initial-scale=1.0">
 About Bradley Hobbs
 </title>
 
+<link
+href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Cormorant+Garamond:wght@400;500;600&display=swap"
+rel="stylesheet">
+
 <style>
 
 *{
@@ -32,9 +36,17 @@ box-sizing:border-box;
 
 }
 
+html{
+
+scroll-behavior:smooth;
+
+}
+
 body{
 
-font-family:Arial,sans-serif;
+font-family:
+"Cormorant Garamond",
+serif;
 
 background:
 linear-gradient(
@@ -46,6 +58,9 @@ var(--bg-alt)
 color:var(--text);
 
 overflow-x:hidden;
+
+min-height:100vh;
+
 }
 
 
@@ -60,6 +75,7 @@ padding:
 text-align:center;
 
 position:relative;
+
 }
 
 .about-badge{
@@ -74,11 +90,21 @@ border-radius:50px;
 margin-bottom:25px;
 
 background:
-rgba(232,182,106,.08);
+rgba(
+232,
+182,
+106,
+.08
+);
 
 border:
 1px solid
-rgba(232,182,106,.25);
+rgba(
+232,
+182,
+106,
+.25
+);
 
 color:
 var(--gold);
@@ -88,9 +114,18 @@ font-size:.8rem;
 letter-spacing:2px;
 
 text-transform:uppercase;
+
+font-family:
+"Cinzel",
+serif;
+
 }
 
 .about-hero h1{
+
+font-family:
+"Cinzel",
+serif;
 
 font-size:
 clamp(
@@ -102,6 +137,15 @@ clamp(
 margin-bottom:25px;
 
 color:var(--gold);
+
+text-shadow:
+0 0 25px rgba(
+232,
+182,
+106,
+.25
+);
+
 }
 
 .about-hero p{
@@ -112,9 +156,10 @@ margin:auto;
 
 line-height:2;
 
-font-size:1.1rem;
+font-size:1.35rem;
 
 color:var(--text-soft);
+
 }
 
 
@@ -138,6 +183,7 @@ grid-template-columns:
 gap:60px;
 
 align-items:center;
+
 }
 
 .author-image{
@@ -149,13 +195,28 @@ border-radius:30px;
 background:
 linear-gradient(
 180deg,
-rgba(255,156,61,.18),
-rgba(0,0,0,.25)
+rgba(
+255,
+156,
+61,
+.18
+),
+rgba(
+0,
+0,
+0,
+.25
+)
 );
 
 border:
 1px solid
-rgba(232,182,106,.15);
+rgba(
+232,
+182,
+106,
+.15
+);
 
 display:flex;
 
@@ -166,15 +227,53 @@ align-items:center;
 font-size:4rem;
 
 color:var(--gold);
+
+box-shadow:
+0 20px 50px rgba(
+0,
+0,
+0,
+.35
+);
+
+}
+
+.author-text{
+
+background:
+rgba(
+255,
+255,
+255,
+.02
+);
+
+padding:35px;
+
+border-radius:30px;
+
+border:
+1px solid rgba(
+232,
+182,
+106,
+.10
+);
+
 }
 
 .author-text h2{
+
+font-family:
+"Cinzel",
+serif;
 
 font-size:2rem;
 
 margin-bottom:25px;
 
 color:var(--gold);
+
 }
 
 .author-text p{
@@ -183,7 +282,10 @@ line-height:2;
 
 margin-bottom:25px;
 
+font-size:1.2rem;
+
 color:var(--text-soft);
+
 }
 
 
@@ -198,11 +300,30 @@ text-align:center;
 
 border-top:
 1px solid
-rgba(232,182,106,.1);
+rgba(
+232,
+182,
+106,
+.1
+);
 
 border-bottom:
 1px solid
-rgba(232,182,106,.1);
+rgba(
+232,
+182,
+106,
+.1
+);
+
+background:
+rgba(
+255,
+255,
+255,
+.02
+);
+
 }
 
 .author-quote p{
@@ -211,13 +332,14 @@ max-width:850px;
 
 margin:auto;
 
-font-size:1.4rem;
+font-size:1.7rem;
 
 font-style:italic;
 
 line-height:2;
 
 color:var(--gold);
+
 }
 
 
@@ -228,11 +350,27 @@ color:var(--gold);
 .author-section{
 
 grid-template-columns:1fr;
+
 }
 
 .author-image{
 
 height:320px;
+
+}
+
+.about-hero{
+
+padding:
+90px 25px
+50px;
+
+}
+
+.author-text{
+
+padding:25px;
+
 }
 
 }
@@ -241,7 +379,6 @@ height:320px;
 </head>
 
 <body>
-
 
 <section class="about-hero">
 
@@ -265,8 +402,6 @@ Writer, storyteller, and creator of faith centered works focused on grace, heali
 
 </section>
 
-
-
 <section class="author-section">
 
 <div class="author-image">
@@ -274,7 +409,6 @@ Writer, storyteller, and creator of faith centered works focused on grace, heali
 ✝
 
 </div>
-
 
 <div class="author-text">
 
@@ -306,8 +440,6 @@ Every page exists with a purpose. Encouragement for wounded hearts. Strength for
 
 </section>
 
-
-
 <section class="author-quote">
 
 <p>
@@ -318,26 +450,62 @@ Every page exists with a purpose. Encouragement for wounded hearts. Strength for
 
 </section>
 
-
-
 <div id="footer"></div>
 
 <script>
 
-fetch("footer.html")
+fetch("./footer.html")
 
-.then(response=>response.text())
+.then(
+response=>{
 
-.then(data=>{
+if(!response.ok){
+
+throw new Error(
+"Footer missing"
+);
+
+}
+
+return response.text();
+
+}
+)
+
+.then(
+data=>{
 
 document.getElementById(
 "footer"
 ).innerHTML=data;
 
-});
+}
+)
+
+.catch(
+()=>{
+
+document.getElementById(
+"footer"
+).innerHTML=`
+
+<footer style="
+padding:60px;
+text-align:center;
+color:#d2c7bb;
+border-top:1px solid rgba(232,182,106,.1);
+">
+
+Written by Bradley Hobbs
+
+</footer>
+
+`;
+
+}
+);
 
 </script>
-
 
 </body>
 </html>
