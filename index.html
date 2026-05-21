@@ -155,68 +155,13 @@ right:0;
 bottom:0;
 
 padding:
-clamp(20px,4vw,60px)
+0
 8%
-clamp(20px,4vw,45px);
+40px;
 
-background:
+display:flex;
 
-linear-gradient(
-transparent 20%,
-rgba(0,0,0,.88)
-);
-}
-
-
-.banner-badge{
-
-display:inline-block;
-
-padding:
-10px 24px;
-
-margin-bottom:25px;
-
-border-radius:50px;
-
-background:
-rgba(232,182,106,.12);
-
-border:
-1px solid
-rgba(232,182,106,.35);
-
-color:
-var(--gold);
-
-font-size:.8rem;
-
-letter-spacing:2px;
-
-text-transform:uppercase;
-}
-
-
-.banner-text{
-
-max-width:650px;
-}
-
-
-.banner-text p{
-
-line-height:2;
-
-font-size:
-clamp(
-1rem,
-2vw,
-1.3rem
-);
-
-margin-bottom:35px;
-
-color:#f4efe8;
+align-items:flex-end;
 }
 
 
@@ -241,6 +186,9 @@ linear-gradient(
 var(--gold),
 var(--fire)
 );
+
+box-shadow:
+0 10px 35px rgba(0,0,0,.45);
 
 transition:.35s;
 }
@@ -325,23 +273,15 @@ justify-content:center;
 .banner-overlay{
 
 padding:
-25px 6%;
-}
-
-.banner-text{
-
-max-width:100%;
+0
+6%
+25px;
 }
 
 }
 
 
 @media(max-width:480px){
-
-.banner-badge{
-
-font-size:.7rem;
-}
 
 .begin-btn{
 
@@ -410,20 +350,6 @@ alt="The Rise of a Holy Family Banner">
 
 <div class="banner-overlay">
 
-<div class="banner-badge">
-
-New Release
-
-</div>
-
-<div class="banner-text">
-
-<p>
-
-A powerful story of grace, healing, holy families, and revival rising from places once marked by rejection.
-
-</p>
-
 <a
 href="contents.html"
 class="begin-btn">
@@ -431,8 +357,6 @@ class="begin-btn">
 Begin Reading
 
 </a>
-
-</div>
 
 </div>
 
