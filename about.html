@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 
 <meta
@@ -10,7 +9,7 @@ content="width=device-width,initial-scale=1.0">
 
 <meta
 name="description"
-content="About Bradley Hobbs. Faith centered writer, storyteller, and creator exploring healing, restoration, family, revival, and hope through Jesus.">
+content="About Bradley Hobbs. Faith centered storyteller and creator exploring healing, restoration, revival, and hope through Jesus.">
 
 <title>
 
@@ -61,6 +60,12 @@ background-color:
 #15110f;
 
 background:
+radial-gradient(
+circle at top,
+rgba(255,156,61,.08),
+transparent 25%
+),
+
 linear-gradient(
 180deg,
 var(--bg-main),
@@ -74,9 +79,6 @@ overflow-x:hidden;
 min-height:100vh;
 
 }
-
-
-/* hero */
 
 .about-hero{
 
@@ -115,15 +117,16 @@ border:
 .25
 );
 
-color:var(--gold);
-
-font-size:.8rem;
-
-letter-spacing:2px;
+color:
+var(--gold);
 
 font-family:
 "Cinzel",
 serif;
+
+font-size:.8rem;
+
+letter-spacing:3px;
 
 text-transform:uppercase;
 
@@ -138,59 +141,52 @@ serif;
 font-size:
 clamp(
 2.8rem,
-6vw,
+7vw,
 5rem
 );
 
+margin-bottom:30px;
+
 color:var(--gold);
 
-margin-bottom:25px;
-
 text-shadow:
-0 0 25px rgba(
+0 0 30px rgba(
 232,
 182,
 106,
-.25
+.2
 );
 
 }
 
 .about-hero p{
 
-max-width:850px;
+max-width:900px;
 
 margin:auto;
 
-font-size:1.4rem;
-
 line-height:2;
+
+font-size:1.4rem;
 
 color:var(--text-soft);
 
 }
 
-
-/* grid */
-
 .author-section{
-
-max-width:1200px;
-
-margin:auto;
 
 padding:
 40px 8%
 100px;
 
+max-width:1200px;
+
+margin:auto;
+
 display:grid;
 
 grid-template-columns:
-minmax(
-280px,
-420px
-)
-1fr;
+1fr 1.3fr;
 
 gap:60px;
 
@@ -218,23 +214,23 @@ rgba(
 0,
 0,
 0,
-.35
+.4
 )
 );
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
 
 border:
 1px solid rgba(
 232,
 182,
 106,
-.12
+.1
 );
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
 
 box-shadow:
 0 20px 60px rgba(
@@ -244,21 +240,57 @@ box-shadow:
 .35
 );
 
-position:relative;
+}
 
-overflow:hidden;
+.author-card{
+
+text-align:center;
+
+padding:35px;
+
+max-width:320px;
 
 }
 
-.author-image:before{
+.author-icon{
 
-content:"✝";
+font-size:3rem;
 
-font-size:5rem;
+margin-bottom:20px;
 
 color:var(--gold);
 
-opacity:.85;
+text-shadow:
+0 0 20px rgba(
+232,
+182,
+106,
+.5
+);
+
+}
+
+.author-card h3{
+
+font-family:
+"Cinzel",
+serif;
+
+font-size:1.8rem;
+
+color:var(--gold);
+
+margin-bottom:25px;
+
+}
+
+.author-card p{
+
+line-height:2;
+
+font-size:1.15rem;
+
+color:var(--text-soft);
 
 }
 
@@ -281,7 +313,7 @@ border:
 232,
 182,
 106,
-.1
+.08
 );
 
 }
@@ -294,7 +326,7 @@ serif;
 
 font-size:2rem;
 
-margin-bottom:30px;
+margin-bottom:25px;
 
 color:var(--gold);
 
@@ -302,9 +334,9 @@ color:var(--gold);
 
 .author-text p{
 
-font-size:1.25rem;
-
 line-height:2;
+
+font-size:1.2rem;
 
 margin-bottom:25px;
 
@@ -312,23 +344,12 @@ color:var(--text-soft);
 
 }
 
-
-/* quote */
-
 .author-quote{
 
 padding:
 80px 30px;
 
 text-align:center;
-
-background:
-rgba(
-255,
-255,
-255,
-.02
-);
 
 border-top:
 1px solid rgba(
@@ -346,6 +367,8 @@ border-bottom:
 .08
 );
 
+margin-bottom:50px;
+
 }
 
 .author-quote p{
@@ -356,7 +379,7 @@ margin:auto;
 
 font-style:italic;
 
-font-size:1.6rem;
+font-size:1.7rem;
 
 line-height:2;
 
@@ -366,15 +389,7 @@ color:var(--gold);
 
 #footer{
 
-min-height:140px;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-color:var(--text-soft);
+min-height:100px;
 
 }
 
@@ -400,12 +415,6 @@ padding:
 
 }
 
-.author-text{
-
-padding:30px;
-
-}
-
 }
 
 </style>
@@ -416,9 +425,7 @@ padding:30px;
 
 <section class="about-hero">
 
-<div
-class="about-badge"
-aria-label="author badge">
+<div class="about-badge">
 
 Author
 
@@ -440,9 +447,35 @@ Writer, storyteller, and creator of faith centered works focused on grace, heali
 
 <section class="author-section">
 
-<div
-class="author-image"
-aria-label="author image area">
+<div class="author-image">
+
+<div class="author-card">
+
+<div class="author-icon">
+
+✦
+
+</div>
+
+<h3>
+
+Faith Centered Author
+
+</h3>
+
+<p>
+
+Stories of revival
+
+Healing journeys
+
+Restoration themes
+
+Grace and hope
+
+</p>
+
+</div>
 
 </div>
 
@@ -462,7 +495,7 @@ Bradley Hobbs writes stories and devotion centered around redemption, healing, i
 
 <p>
 
-The Rise of a Holy Family explores revival born from rejection and journeys through family restoration, faith, holiness, and hope.
+The Rise of a Holy Family explores revival born from rejection and journeys through themes of family restoration, faith, holiness, and hope.
 
 </p>
 
@@ -486,32 +519,45 @@ Every page exists with a purpose. Encouragement for wounded hearts. Strength for
 
 </section>
 
-<div id="footer">
-
-Loading...
-
-</div>
+<div id="footer"></div>
 
 <script>
 
 fetch("./footer.html")
 
-.then(
-r=>r.text()
-)
+.then(r=>r.text())
 
-.then(
-data=>{
+.then(data=>{
+
+const parser=
+new DOMParser();
+
+const doc=
+parser.parseFromString(
+data,
+"text/html"
+);
+
+const footer=
+
+doc.querySelector(
+".site-footer,.footer,footer"
+);
 
 document
 .getElementById(
 "footer"
 )
 
-.innerHTML=data;
+.innerHTML=
 
-}
-)
+footer ?
+
+footer.outerHTML :
+
+data;
+
+})
 
 .catch(()=>{
 
@@ -522,7 +568,7 @@ document
 
 .innerHTML=
 
-"<footer style='padding:50px'>Written by Bradley Hobbs</footer>";
+"<footer style='padding:50px;text-align:center;color:#d2c7bb;'>Written by Bradley Hobbs</footer>";
 
 });
 
